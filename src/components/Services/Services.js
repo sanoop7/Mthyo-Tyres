@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import { TabTitle } from "../../utils/General";
-import axios from "axios";
 import ServicesCategory from "./Container/ServicesCategory";
 import "./Services.css";
 import ReactLoading from "react-loading";
@@ -11,7 +9,6 @@ import MechanicalRepair from "../../asset/img/mechanical.png";
 import AutoElectricalRepair from "../../asset/img/auto-electrical-repair.png";
 import ACServices from "../../asset/img/Ac-Service.png";
 import BodyRepair from "../../asset/img/body-repair.png";
-import DiagnosisProgramming from "../../asset/img/diagnosis-programming.png";
 import Retrofits from "../../asset/img/retrofits.png";
 
 const Services = () => {
@@ -19,7 +16,7 @@ const Services = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const myTimeout = setTimeout(() => {
+    setTimeout(() => {
       setMenItems([
         {
           name: "Service and Maintenance",

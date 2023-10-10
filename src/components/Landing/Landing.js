@@ -1,5 +1,4 @@
 import "./Landing.css";
-import land from "../../asset/brand/landing-img-2.png";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 

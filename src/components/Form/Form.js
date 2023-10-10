@@ -1,6 +1,5 @@
 import "./Form.css";
 import MyFormComponent from "./MyFormComponent";
-import formImg from "../../asset/img/275.png";
 
 const Form = () => {
   return (

@@ -2,8 +2,6 @@ import "./HowItWorks.css";
 import cardIconFirst from "../../asset/icons/card-icon-1.png";
 import cardIconSecond from "../../asset/icons/card-icon-2.png";
 import cardIconThird from "../../asset/icons/card-icon-3.png";
-import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
 
 const HowItWorks = () => {
   return (

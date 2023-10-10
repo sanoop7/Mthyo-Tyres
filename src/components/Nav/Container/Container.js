@@ -1,11 +1,8 @@
 import DrawerNav from "../DrawerNav/DrawerNav";
 import NavBrand from "../Nav-Brand/Navbrand";
-
-import { useLocation } from "react-router-dom";
 import "./Container.css";
 
 const Navtop = () => {
-  const location = useLocation();
   const Scroll = () => {
     let element = document.getElementById("form_sec");
     if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
