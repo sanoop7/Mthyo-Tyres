@@ -4,11 +4,11 @@ import "./Aboutus.css";
 
 const Aboutus = () => {
   const [count, setCount] = useState(0);
-
   const countRef = useRef(null);
 
   useEffect(() => {
     const targetCount = 12;
+    const tempRef = countRef.current;
 
     const handleScroll = (entries) => {
       entries.forEach((entry) => {
@@ -34,14 +34,14 @@ const Aboutus = () => {
       threshold: 0.5, // Adjust the threshold value as needed to control when the animation starts
     });
 
-    if (countRef.current) {
-      observer.observe(countRef.current);
+    if (tempRef) {
+      observer.observe(tempRef);
     }
 
     // Clean up the observer when the component unmounts
     return () => {
-      if (countRef.current) {
-        observer.unobserve(countRef.current);
+      if (tempRef) {
+        observer.unobserve(tempRef);
       }
     };
   }, []);
