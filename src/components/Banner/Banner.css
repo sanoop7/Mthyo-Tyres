@@ -1,0 +1,44 @@
+.banner_container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15rem;
+    position: relative;
+}
+
+.banner_container .left {
+    justify-content: flex-start;
+
+}
+
+.banner_container::before {
+    background: rgb(0 0 0 / 20%);
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+}
+
+.banner_tittle {
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 1000;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    color: #bcb28c;
+    line-height: 64px;
+    text-align: right;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner_container {
+        display: none;
+    }
+}

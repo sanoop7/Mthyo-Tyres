@@ -1,0 +1,84 @@
+.landing__container {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  /* background-color: #ecdc0a; */
+  position: relative;
+  padding-top: 7.5rem;
+  background-image: url("../../asset/brand/bannerBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing__header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.landing__header__container {
+  width: 40%;
+  height: auto;
+  min-height: 450px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing__header {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.landing__header__main {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 1000;
+  font-family: 'Kanit', sans-serif;
+  text-transform: uppercase;
+  line-height: 64px;
+}
+
+.landing__header__discount {
+  font-size: 1.2rem;
+}
+
+.landing__button {
+  width: 60%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.landing__image__container {
+  width: 43%;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../asset/brand/landing-img-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing__image {
+  height: 100%;
+  width: 90%;
+  top: 0%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 850px) {
+  .landing__image__container {
+    display: none;
+  }
+}
